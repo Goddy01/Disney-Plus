@@ -42,13 +42,14 @@ function Detail() {
 export default Detail
 
 const Container = styled.div`
+    ${'' /* margin-top: 60px; */}
     min-height: calc(100vh - 80px);
     padding: 0 calc(3.5vw + 5px);
-    position: relative;
+    ${'' /* position: relative; */}
 `
 
 const Background = styled.div`
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -144,5 +145,5 @@ const Description = styled.div`
   color: rgb(249, 249, 249);
   font-size: 20px;
   margin-top: 16px;
-  max-width: 70vw;
+  max-width: 45vw;
 `

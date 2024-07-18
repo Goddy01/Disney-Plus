@@ -7,31 +7,31 @@ function Header() {
       <Logo src="/images/logo.svg" />
         <NavMenu>
             <a>
-                <img src="/images/home-icon.svg" />
+                <img src="/images/home-icon.svg" alt='home-icon'/>
                 <span>HOME</span>
             </a>
             <a>
-                <img src="/images/search-icon.svg" />
+                <img src="/images/search-icon.svg" alt='search-icon' />
                 <span>SEARCH</span>
             </a>
             <a>
-                <img src="/images/watchlist-icon.svg" />
+                <img src="/images/watchlist-icon.svg" alt='watchlist-icon' />
                 <span>WATCHLIST</span>
             </a>
             <a>
-                <img src="/images/original-icon.svg" />
+                <img src="/images/original-icon.svg" alt='original-icon' />
                 <span>ORIGINALS</span>
             </a>
             <a>
-                <img src="/images/movie-icon.svg" />
+                <img src="/images/movie-icon.svg" alt='movie-icon' />
                 <span>MOVIES</span>
             </a>
             <a>
-                <img src="/images/series-icon.svg" />
+                <img src="/images/series-icon.svg" alt='series-icon' />
                 <span>SERIES</span>
             </a>
         </NavMenu>
-        <UserImg src="/images/bruce-wayne.jpg" />
+        <UserImg src="/images/bruce-wayne.jpg" alt='profile-picture' />
     </Nav>
   )
 }
@@ -40,11 +40,16 @@ export default Header
 
 const Nav = styled.div`
     height: 80px;
+    width: 100%;
     background-color: #090b13;
     display: flex;
+    ${'' /* position: fixed; */}
+    top: 0;
     align-items: center;
     padding: 0 33px;
     overflow-x: hidden;
+    z-index: 1000;
+    padding: 0 33px;
 `
 
 const Logo = styled.img`
